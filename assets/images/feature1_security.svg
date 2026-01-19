@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 80 80">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke-width: 0px;
+      }
+
+      .cls-2 {
+        clip-path: url(#clippath);
+      }
+    </style>
+    <clipPath id="clippath">
+      <rect class="cls-1" width="80" height="80"/>
+    </clipPath>
+  </defs>
+  <g class="cls-2">
+    <image width="6048" height="4024" transform="translate(-31.2 -.05) scale(.02)" xlink:href="../../../../Downloads/closeup-remote-control-button.jpg"/>
+  </g>
+</svg>
