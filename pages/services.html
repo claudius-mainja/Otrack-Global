@@ -508,68 +508,64 @@
     </section>
 
 
-   <!-- Contact Button -->
+    <!-- Contact Button -->
     <section>
-        <div id="contact-button" class="fixed bottom-6 right-6 z-50">
+        <div id="contact-button" class="fixed bottom-4 right-4 md:bottom-6 md:right-6 z-50">
             <!-- Contact Options Modal -->
             <div id="contact-options" class="hidden">
                 <!-- Modal Background -->
-                <div class="fixed inset-0 bg-black bg-opacity-50 transition-opacity duration-300"></div>
+                <div class="fixed inset-0 bg-black bg-opacity-0 transition-opacity duration-300"></div>
 
                 <!-- Modal Content -->
-                <div
-                    class="absolute bottom-20 right-0 w-72 bg-white rounded-xl shadow-2xl transform transition-all duration-300">
-                    <!-- Header -->
-                    <div class="p-6 border-b border-gray-100">
-                        <h3 class="text-xl font-semibold text-gray-800">Let's Chat via WhatsApp or Calls! 👋</h3>
-                        <p class="text-sm text-gray-600 mt-2">Choose how you'd like to connect with us</p>
+                <div class="modal-content absolute bottom-16 md:bottom-20 right-0 w-[calc(100vw-2rem)] max-w-72 bg-white rounded-xl shadow-2xl transform transition-all duration-300 opacity-0">
+                    <!-- Header with Close Button -->
+                    <div class="p-4 md:p-6 border-b border-gray-100 relative">
+                        <button id="close-modal" class="absolute top-3 right-3 md:top-4 md:right-4 w-8 h-8 flex items-center justify-center rounded-full hover:bg-gray-100 transition-colors duration-200 text-gray-500 hover:text-gray-700">
+                            <i class="fas fa-times text-lg"></i>
+                        </button>
+                        <h3 class="text-lg md:text-xl font-semibold text-gray-800 pr-8">Let's Chat via WhatsApp or Calls! 👋</h3>
+                        <p class="text-xs md:text-sm text-gray-600 mt-2">Choose how you'd like to connect with us</p>
                     </div>
 
                     <!-- Contact Options -->
-                    <div class="p-4 space-y-3">
+                    <div class="p-3 md:p-4 space-y-2 md:space-y-3">
                         <!-- WhatsApp Option -->
                         <a href="https://wa.me/263713878933" target="_blank"
-                            class="flex items-center gap-4 p-3 rounded-lg hover:bg-green-50 transition-all duration-300 group">
-                            <div
-                                class="w-10 h-10 bg-green-500 rounded-md flex items-center justify-center text-white shadow-lg group-hover:scale-110 transition-transform duration-300">
-                                <i class="fab fa-whatsapp text-xl"></i>
+                            class="flex items-center gap-3 md:gap-4 p-2.5 md:p-3 rounded-lg hover:bg-green-50 transition-all duration-300 group">
+                            <div class="w-9 h-9 md:w-10 md:h-10 bg-green-500 rounded-md flex items-center justify-center text-white shadow-lg group-hover:scale-110 transition-transform duration-300">
+                                <i class="fab fa-whatsapp text-lg md:text-xl"></i>
                             </div>
-                            <div>
-                                <h4 class="font-medium text-gray-800">WhatsApp</h4>
-                                <p class="text-sm text-gray-500">Instant messaging support</p>
+                            <div class="flex-1 min-w-0">
+                                <h4 class="font-medium text-gray-800 text-sm md:text-base">WhatsApp</h4>
+                                <p class="text-xs md:text-sm text-gray-500">Instant messaging support</p>
                             </div>
-                            <i
-                                class="fas fa-chevron-right ml-auto text-gray-400 group-hover:translate-x-1 transition-transform duration-300"></i>
+                            <i class="fas fa-chevron-right text-gray-400 group-hover:translate-x-1 transition-transform duration-300 text-sm"></i>
                         </a>
 
                         <!-- Messenger Option -->
                         <a href="https://www.facebook.com/OTrackGlobal" target="_blank"
-                            class="flex items-center gap-4 p-3 rounded-lg hover:bg-purple-50 transition-all duration-300 group">
-                            <div
-                                class="w-10 h-10 bg-purple-500 rounded-md flex items-center justify-center text-white shadow-lg group-hover:scale-110 transition-transform duration-300">
-                                <i class="fab fa-facebook-messenger text-xl"></i>
+                            class="flex items-center gap-3 md:gap-4 p-2.5 md:p-3 rounded-lg hover:bg-purple-50 transition-all duration-300 group">
+                            <div class="w-9 h-9 md:w-10 md:h-10 bg-purple-500 rounded-md flex items-center justify-center text-white shadow-lg group-hover:scale-110 transition-transform duration-300">
+                                <i class="fab fa-facebook-messenger text-lg md:text-xl"></i>
                             </div>
-                            <div>
-                                <h4 class="font-medium text-gray-800">Messenger</h4>
-                                <p class="text-sm text-gray-500">Chat via Facebook</p>
+                            <div class="flex-1 min-w-0">
+                                <h4 class="font-medium text-gray-800 text-sm md:text-base">Messenger</h4>
+                                <p class="text-xs md:text-sm text-gray-500">Chat via Facebook</p>
                             </div>
-                            <i
-                                class="fas fa-chevron-right ml-auto text-gray-400 group-hover:translate-x-1 transition-transform duration-300"></i>
+                            <i class="fas fa-chevron-right text-gray-400 group-hover:translate-x-1 transition-transform duration-300 text-sm"></i>
                         </a>
 
                         <!-- Phone Option -->
-                        <a href="tel: +263718602892"
-                            class="flex items-center gap-4 p-3 rounded-lg hover:bg-blue-50 transition-all duration-300 group">
-                            <div class="w-10 h-10 bg-blue-500 rounded-md flex items-center justify-center text-white shadow-lg group-hover:scale-110 transition-transform duration-300"
-                                target="_blank">
-                                <i class="fas fa-phone text-xl"></i>
+                        <a href="tel:+263718602892"
+                            class="flex items-center gap-3 md:gap-4 p-2.5 md:p-3 rounded-lg hover:bg-blue-50 transition-all duration-300 group">
+                            <div class="w-9 h-9 md:w-10 md:h-10 bg-blue-500 rounded-md flex items-center justify-center text-white shadow-lg group-hover:scale-110 transition-transform duration-300">
+                                <i class="fas fa-phone text-lg md:text-xl"></i>
                             </div>
-                            <div>
-                                <h4 class="font-medium text-gray-800">Phone Call</h4>
-                                <p class="text-sm text-gray-500">Direct voice support</p>
+                            <div class="flex-1 min-w-0">
+                                <h4 class="font-medium text-gray-800 text-sm md:text-base">Phone Call</h4>
+                                <p class="text-xs md:text-sm text-gray-500">Direct voice support</p>
                             </div>
-                            <i
-                                class="fas fa-chevron-right ml-auto text-gray-400 group-hover:translate-x-1 transition-transform duration-300"></i>
+                            <i class="fas fa-chevron-right text-gray-400 group-hover:translate-x-1 transition-transform duration-300 text-sm"></i>
                         </a>
                     </div>
                 </div>
@@ -577,13 +573,14 @@
 
             <!-- Main Toggle Button -->
             <button id="toggle-contact"
-                class="group bg-gradient-to-r from-black to-orange-400 text-white p-4 rounded-md shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 flex items-center gap-3">
-                <i class="fas fa-comments text-xl group-hover:rotate-12 transition-transform duration-300"></i>
-                <span class="text-sm font-medium mr-2">Let's Chat via WhatsApp or Calls!</span>
+                class="group bg-gradient-to-r from-black to-orange-400 text-white p-3 md:p-4 rounded-md shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 flex items-center gap-2 md:gap-3">
+                <i class="fas fa-comments text-lg md:text-xl group-hover:rotate-12 transition-transform duration-300"></i>
+                <span class="text-xs md:text-sm font-medium hidden sm:inline">Let's Chat via WhatsApp or Calls!</span>
+                <span class="text-xs font-medium sm:hidden">Chat</span>
             </button>
         </div>
     </section>
-    <!--End of the Contact button-->
+    <!--end of contact button-->
 
     <!-- Footer -->
     <footer class="bg-[#231F20] text-white relative overflow-hidden">
